@@ -2,9 +2,9 @@
 
 
 <template>
-<div class="card">
-
-  <header class="card-header"><h1 class="title">A tribute to:</h1>
+<div class="card" >
+    
+  <header class="card-header" style="background: radial-gradient(circle, rgba(14,8,103,0.5970763305322129) 0%, rgba(186,158,136,1) 35%, rgba(113,136,140,1) 100%);" ><h1 class="title">A tribute to:</h1>
     <p class="card-header-title">
       <b-tag type="is-success" size="is-large">Deleuze</b-tag> <b-tag type="is-success is-light">and</b-tag>
       <b-tag type="is-success" size="is-large">Guattari's</b-tag> 
@@ -14,7 +14,7 @@
     </p>
   </header>
     <section>
-        <section class="hero is-medium is-success is-bold">
+        <section class="hero is-medium is-bold" style="background: radial-gradient(circle, rgba(14,8,103,0.5970763305322129) 0%, rgba(186,158,136,1) 35%, rgba(113,136,140,1) 100%);">
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
@@ -26,8 +26,10 @@
     </div>
   </div>
 </section>
+<section style="background: rgb(14,8,103);
+background: linear-gradient(90deg, rgba(14,8,103,0.5970763305322129) 0%, rgba(186,158,136,1) 35%, rgba(113,136,140,1) 100%);">
  <b-field position="is-centered">
-            <b-input v-model="prefix" placeholder="Speak of nomadology..." type="is-success" icon="magnify" size="is-large">
+            <b-input v-model="prefix" placeholder="Speak of nomadology..." type="is-dark" size="is-large">
             </b-input>
             <p class="control">
                 <b-button label="Submit" type="is-dark" outlined size="is-large" v-on:click="submitPrefix"/>
@@ -41,8 +43,8 @@
     <h1 class="title" style="color:#006400; font-size:300%;">Loading...</h1>
         </b-loading>
 
-
-      <section class="hero is-small is-primary is-bold">
+</section>
+      <section class="hero is-small" style="background: radial-gradient(circle, rgba(14,8,103,0.5970763305322129) 0%, rgba(186,158,136,1) 35%, rgba(113,136,140,1) 100%);">
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
@@ -62,8 +64,8 @@
         </b-carousel-item>
     </b-carousel>   
     </section>
-    <footer class="footer">
-  <div class="content has-text-centered">
+    <footer class="footer" style="background: radial-gradient(circle, rgba(14,8,103,0.5970763305322129) 0%, rgba(186,158,136,1) 35%, rgba(113,136,140,1) 100%);">
+  <div class="content has-text-centered" >
     <p>
       <strong>Bulma</strong> used for styling, by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
       <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
