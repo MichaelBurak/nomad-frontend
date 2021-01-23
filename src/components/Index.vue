@@ -2,15 +2,29 @@
 
 
 <template>
+
 <div class="card" >
-    
-  <header class="card-header" style="background: radial-gradient(circle, rgba(14,8,103,0.5970763305322129) 0%, rgba(186,158,136,1) 35%, rgba(113,136,140,1) 100%);" ><h1 class="title">A tribute to:</h1>
+
+
+  <header class="card-header" style="background: radial-gradient(circle, rgba(14,8,103,0.5970763305322129) 0%, rgba(186,158,136,1) 35%, rgba(113,136,140,1) 100%);" > 
+      <div class="columns is-mobile" >
+  <div class="column is-8 is-offset-one-quarter" >
+      <!-- <b-image
+            :src="require('../assets/mycelium.jpg')"
+            rounded
+            responsive
+            style="opacity:.5;"
+            
+        ></b-image> -->
+  </div>
+</div>
+           <h1 class="title" style="opacity:.8;">A tribute to: </h1>
     <p class="card-header-title">
-      <b-tag type="is-success" size="is-large">Deleuze</b-tag> <b-tag type="is-success is-light">and</b-tag>
-      <b-tag type="is-success" size="is-large">Guattari's</b-tag> 
-      -->
-            <b-tag type="is-danger" size="is-small">~~~linguistics~~~</b-tag> <b-taglist attached><b-tag type="is-success is-light">by coder</b-tag>---( <b-tag type="is-danger is-light" size="is-large">Emily Burak</b-tag>)---
-      <b-tag type="is-success is-light">former philosopher</b-tag></b-taglist>
+      <b-tag type="is-success" size="is-large" style="opacity:.8;">Deleuze</b-tag> <b-tag type="is-success is-light" style="opacity:.5;">and</b-tag>
+      <b-tag type="is-success" size="is-large" style="opacity:.8;">Guattari's</b-tag> 
+      
+            <b-tag type="is-danger" size="is-small" style="opacity:.7;">linguistics</b-tag> <b-taglist attached><b-tag type="is-success is-light" style="opacity:.5;">by coder</b-tag><b-tag rounded type="is-danger is-light" style="opacity:.8;" >Emily Burak</b-tag>
+      <b-tag type="is-success is-light is-small" style="opacity:.3;">(former philosopher)</b-tag></b-taglist>
     </p>
   </header>
     <section>
@@ -18,6 +32,13 @@
   <div class="hero-body">
     <div class="container" >
       <h1 class="title">
+           <b-image
+            :src="require('../assets/mycelium.jpg')"
+            rounded
+            responsive
+            style="opacity:.5;"
+            
+        ></b-image>
         Nomadologic Generator
       </h1>
       <h2 class="subtitle">
@@ -47,7 +68,7 @@ background: linear-gradient(90deg, rgba(14,8,103,0.5970763305322129) 0%, rgba(18
       <section class="hero is-small" style="background: radial-gradient(circle, rgba(14,8,103,0.5970763305322129) 0%, rgba(186,158,136,1) 35%, rgba(113,136,140,1) 100%);">
   <div class="hero-body">
     <div class="container">
-      <h1 class="title">
+      <h1 class="title" style="opacity:.8;">
         Art credit to <a href="happysleepy.com">Happy Sleepy</a> for the fantastic illustrations
       </h1>
     </div>
