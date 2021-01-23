@@ -19,7 +19,10 @@
                 <b-button label="Submit" type="is-dark" outlined size="is-large" v-on:click="submitPrefix"/>
             </p>
         </b-field>
-    {{text}}
+         <b-message >
+            {{text}}
+        </b-message>
+    
     <b-carousel >
         <b-carousel-item v-for="(carousel, i) in carousels" :key="i" >
             <section :class="`hero is-small is-${carousel.color}`">
@@ -28,18 +31,14 @@
                 </div>
             </section>
         </b-carousel-item>
-    </b-carousel>
-        
+    </b-carousel>   
     </section>
 </template>
-
-
 
 
 <script>
 const axios = require("axios")
 export default {
-    
   name: 'Index',
     data(){
         return {
@@ -76,6 +75,3 @@ export default {
   }
 }
 </script>
-
-
-
