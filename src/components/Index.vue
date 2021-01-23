@@ -16,7 +16,7 @@
     <section>
         <section class="hero is-medium is-bold" style="background: radial-gradient(circle, rgba(14,8,103,0.5970763305322129) 0%, rgba(186,158,136,1) 35%, rgba(113,136,140,1) 100%);">
   <div class="hero-body">
-    <div class="container">
+    <div class="container" >
       <h1 class="title">
         Nomadologic Generator
       </h1>
