@@ -19,10 +19,14 @@
                 <b-button label="Submit" type="is-dark" outlined size="is-large" v-on:click="submitPrefix"/>
             </p>
         </b-field>
-         <b-message >
+         <b-message size="is-medium">
             {{text}}
         </b-message>
-    
+
+        <b-loading  :is-full-page="isFullPage" v-model="isLoading" :can-cancel="true">
+    <h1 class="title" style="color:#006400; font-size:300%;">Loading...</h1>
+        </b-loading>
+
     <b-carousel >
         <b-carousel-item v-for="(carousel, i) in carousels" :key="i" >
             <section :class="`hero is-small is-${carousel.color}`">
@@ -42,7 +46,8 @@ export default {
   name: 'Index',
     data(){
         return {
-            loading: { type: Boolean },
+            isLoading: false,
+            isFullPage: false,
             prefix: "",
             text:"",
             carousels: [
@@ -57,6 +62,7 @@ export default {
   methods:{
       submitPrefix:function(){
           var vm = this
+          this.isLoading=true
           axios({
     method: 'post',
     url: "https://nomadologic-generator-mj57ujwjhq-uw.a.run.app/",
@@ -68,10 +74,13 @@ export default {
     },
 }).then(function (response) {
     vm.text = response.data.text
+    vm.isLoading=false
 }).catch(function (error) {
     console.log(error);
+    vm.isLoading=false
 });
-      }
+      },
+      
   }
 }
 </script>
