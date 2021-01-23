@@ -1,6 +1,20 @@
+
+
+
 <template>
+<div class="card">
+
+  <header class="card-header"><h1 class="title">A tribute to:</h1>
+    <p class="card-header-title">
+      <b-tag type="is-success" size="is-large">Deleuze</b-tag> <b-tag type="is-success is-light">and</b-tag>
+      <b-tag type="is-success" size="is-large">Guattari's</b-tag> 
+      -->
+            <b-tag type="is-danger" size="is-small">~~~linguistics~~~</b-tag> <b-taglist attached><b-tag type="is-success is-light">by coder</b-tag>---( <b-tag type="is-danger is-light" size="is-large">Emily Burak</b-tag>)---
+      <b-tag type="is-success is-light">former philosopher</b-tag></b-taglist>
+    </p>
+  </header>
     <section>
-        <section class="hero is-medium is-dark is-bold">
+        <section class="hero is-medium is-success is-bold">
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
@@ -20,12 +34,23 @@
             </p>
         </b-field>
          <b-message size="is-medium">
-            {{text}}
+            {{text? text:"and text will appear here"}}
         </b-message>
 
         <b-loading  :is-full-page="isFullPage" v-model="isLoading" :can-cancel="true">
     <h1 class="title" style="color:#006400; font-size:300%;">Loading...</h1>
         </b-loading>
+
+
+      <section class="hero is-small is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Art credit to <a href="happysleepy.com">Happy Sleepy</a> for the fantastic illustrations
+      </h1>
+    </div>
+  </div>
+      </section>
 
     <b-carousel >
         <b-carousel-item v-for="(carousel, i) in carousels" :key="i" >
@@ -37,6 +62,20 @@
         </b-carousel-item>
     </b-carousel>   
     </section>
+    <footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Bulma</strong> used for styling, by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      <strong>Emily Burak</strong> is the <b-tag type="is-success" size="is-small">creator</b-tag> of this page 
+      and can be best reached at <a href="https://www.emilytburak.com/">emilytburak.com</a>
+    </p>
+  </div>
+</footer>
+
+    </div>
+    
 </template>
 
 
