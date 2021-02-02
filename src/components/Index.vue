@@ -93,9 +93,10 @@
         <b-field position="is-centered">
           <b-input
             v-model="prefix"
-            placeholder="Bring something incomprehensible into the world..."
+            placeholder="'Bring something incomprehensible...', type and submit to generate text"
             type="is-dark"
-            size="is-large"
+            size="is-medium"
+            expanded
           >
           </b-input>
           <p class="control">
@@ -103,7 +104,7 @@
               label="Submit"
               type="is-dark"
               outlined
-              size="is-large"
+              size="is-medium"
               v-on:click="submitPrefix"
             />
           </p>
